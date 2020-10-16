@@ -1,11 +1,11 @@
 import * as ajax from "../../js/ajax.js";
 import { toPage } from "../../js/redirect.js";
 import { formDataToJson } from "../../js/utilsForm.js";
+import { el } from "../../js/utilsHtml.js";
 
 const submitTopic= (event)=> {
     event.preventDefault();
-    let form = document.getElementById("topicForm");
-    let data = new FormData(form);
+    let data = new FormData(el.topicForm);
     let json = formDataToJson(data);
     ajax.post("http://localhost:8085/topics", redirectWithQuery, json); 
 }
@@ -15,7 +15,7 @@ const redirectWithQuery=(response)=>{
 }
 
 const initSubmitButton =()=>{
-    document.getElementById("submitTopic").addEventListener("click", submitTopic);
+    el.submitTopicButton.addEventListener("click", submitTopic);
 }
 
 initSubmitButton();
