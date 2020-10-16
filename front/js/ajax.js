@@ -27,16 +27,6 @@ const callFetch = (url, callback, options)=>{
                 response.json().then(json => { callback(json)}) :
                 callback();
             }
-            console.log(response);
-            
-        //     if (response.ok){
-        //         if (response.json()){
-
-        //         }
-        //     }
-        //     response.json()
-        // })
-        // .then(json => { callback(json)})
         }).catch(err => console.log("ERROR from fetch: ", err));
 }
 
