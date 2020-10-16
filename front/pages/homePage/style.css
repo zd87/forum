@@ -1,0 +1,11 @@
+#homePage {
+    margin:0 auto;
+    width: 50vw;
+}
+#topicForm {
+    display: flex;
+    flex-direction: column;
+}
+#submitTopic {
+    cursor: pointer;
+}

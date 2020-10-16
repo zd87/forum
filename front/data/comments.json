@@ -1,0 +1,56 @@
+[
+    {
+        "id":1,
+        "userName":"Tootsie",
+        "creationDate": 1602513868610,
+        "comment":"Hi, my name is Tootsie, I am looking for friends.",
+        "quotedComment":null
+    },
+    {
+        "id":2,
+        "userName":"Betty",
+        "creationDate": 1602513868610,
+        "comment":"Hi, my name is Betty, I am looking for friends.",
+        "quotedComment":null
+    },
+    {
+        "id":3,
+        "userName":"Bob",
+        "creationDate": 1602513868610,
+        "comment":"Hi Tootsie, my name is Bob, I am looking for friends too.",
+        "quotedComment": {
+            "id":1,
+            "comment":"Hi, my name is Tootsie, I am looking for friends."
+        }
+    },
+    {
+        "id":4,
+        "userName":"Bob",
+        "creationDate": 1602513868610,
+        "comment":"Hi Betty, my name is Bob, I am looking for friends too.",
+        "quotedComment":{
+            "id":2,
+            "comment":"Hi, my name is Betty, I am looking for friends."
+        }
+    },
+    {
+        "id":5,
+        "userName":"Tootsie",
+        "creationDate": 1602513868610,
+        "comment":"Nobody cares, Bob.",
+        "quotedComment":{
+            "id":4,
+            "comment": "Hi Betty, my name is Bob, I am looking for friends too."
+        }
+    },
+    {
+        "id":6,
+        "userName":"Betty",
+        "creationDate": 1602513868610,
+        "comment":"Yeah, Bob.",
+        "quotedComment":{
+            "id":5,
+            "comment":"Nobody cares, Bob."
+        }
+    }
+]

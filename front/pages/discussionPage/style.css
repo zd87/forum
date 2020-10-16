@@ -1,0 +1,73 @@
+p {
+    margin:0;
+}
+
+#discussionPage {
+    margin:0 auto;
+    width: 50vw;
+}
+
+#commentForm, #commentsSection, #commentsContainer{
+    display:flex;
+    flex-direction: column;
+}
+#chosenTopicDescription{
+    margin-bottom:16px;
+    padding:8px;
+    background-color: rgb(241, 240, 240);
+}
+#commentsSection {
+    justify-content: space-between;
+}
+
+#commentsDisplay {
+    min-height:40vh;
+}
+#commentInputWrapper {
+    border: 1px solid black;
+    padding:8px;
+}
+#commentInput {
+    width: 100%;
+    border:none;
+    white-space: pre-wrap;
+}
+
+#quotedCommentBody{
+    white-space: pre-wrap;
+}
+#removeQuote {
+    cursor: pointer;
+}
+#quotedComment {
+    flex-direction: row;
+    justify-content: space-between;
+    display:none;
+}
+.quotedComment {
+    border-radius: 15px;
+    background-color: rgb(241, 240, 240);
+    padding:8px;
+}
+.comment {
+    margin-bottom: 15px;
+}
+.comment > div{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+.userInfo {
+    border-right: 1px solid black;
+    max-width: 30%;
+    padding: 15px;
+    text-align: end
+}
+.commentText {
+    padding: 15px;
+}
+.quoteButton {
+    width: 100px;
+    float:right;
+    cursor: pointer;
+}

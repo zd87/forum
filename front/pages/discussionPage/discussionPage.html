@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navItems">
+        <ul>
+            <li class="navItem"><a href="/pages/homePage/homePage.html">Home</a></li>
+        </ul>
+    </nav>
+    <div id="discussionPage">
+        <h2 id="chosenTopic"></h2>
+        <p id="chosenTopicCreationDate"></p>
+        <p id="chosenTopicDescription"></p>
+        <div id="commentsSection">
+            <div id="commentsContainer">
+               
+            </div>
+            <form id="commentForm">
+                <h3>Add a new comment</h3>
+                <label for="userName">User name:</label>
+                <input type="text" name="userName" id="userName">
+                <label for="commentInputWrapper">Comment:</label>
+                <div id="commentInputWrapper">
+                    <div id="quotedComment" class="quotedComment">
+                        <p id="quotedCommentBody"></p>
+                        <i id="removeQuote">X</i>
+                    </div>
+                    <textarea name="comment" id="commentInput" rows="5" cols="33" required></textarea>
+                </div>
+                <button type="submit" id="submitComment">Send</button>
+            </form>
+        </div>
+    </div>
+    
+    <script type="module" src="scripts.js"></script>
+</body>
+</html>
