@@ -28,8 +28,21 @@ const buildComment = (comment, commentsContainer, quoteCommentCallback)=>{
     commentsContainer.appendChild(divComment);
 }
 
+const el = {
+    commentsContainer:      document.getElementById("commentsContainer"),
+    topicName :             document.getElementById("chosenTopic"),
+    topicDescription :      document.getElementById("chosenTopicDescription"),
+    topicCreationDate :     document.getElementById("chosenTopicCreationDate"),
+    quotedComment :         document.getElementById("quotedComment"),
+    quotedCommentBody :     document.getElementById("quotedCommentBody"),
+    removeQuoteButton :     document.getElementById("removeQuote"),
+    commentForm :           document.getElementById("commentForm"),
+    topicForm :             document.getElementById("topicForm"),
+    submitCommentButton :   document.getElementById("submitComment"),
+    submitTopicButton :     document.getElementById("submitTopic")
+}
+
 export{
-    addDomElement,
-    commentTemplate,
-    buildComment
+    buildComment,
+    el
 }
